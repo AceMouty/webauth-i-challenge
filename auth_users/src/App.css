@@ -12,7 +12,8 @@
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  flex-wrap: wrap;
+  width: 15%;
 }
 
 .nav-container .nav a{
@@ -30,6 +31,5 @@
   /* border: 2px solid orange; */
   display: flex;
   flex-direction: column;
-  flex: 1 1 0px;
   margin: 10px;
 }
