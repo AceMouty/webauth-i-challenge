@@ -28,6 +28,8 @@ route.post('/register', check.validateRegister, (req, res)=> {
     .catch(() => res.status(500).json({message: "The DB ran into a issue"}))
 })
 
+
+// Test endpoint edit as needed to test things
 route.get('/test/:id', (req, res) => {
   db.findUser(req.params.id)
     .then(user => console.log(user))
