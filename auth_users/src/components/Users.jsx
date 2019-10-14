@@ -12,7 +12,11 @@ function Users(){
     .then(res => {
       setUsers(res.data.data)
     })
-  }, [users])
+
+    return () => {
+      console.log("complete")
+    }
+  }, [])
 
   if(!users){
     return(
