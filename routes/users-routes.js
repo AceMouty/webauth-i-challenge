@@ -19,6 +19,8 @@ route.post('/register', check.validateRegister, (req, res)=> {
 
   // hash the incoming password of the new user and assign it to the password field
   newUser.password = bcrypt.hashSync(newUser.password)
+  
+  console.log("FROM THE REGISTER " ,req.session)
 
   // insert the new user
   db.createUser(newUser)
@@ -40,6 +42,8 @@ route.post('/login', (req, res) => {
 
         // save some session information
         req.session.username = user.username;
+
+        console.log("FROM THE LOGIN" ,req.session)
 
         res.status(200).json({
           message: `Welcome ${user.username}!`,
