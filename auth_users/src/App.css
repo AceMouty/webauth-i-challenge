@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.nav-container .nav {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 15%;
+}
+
+.nav-container .nav a{
+  color: black;
+}
+
+.user-list {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.user-card{
+  /* border: 2px solid orange; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
